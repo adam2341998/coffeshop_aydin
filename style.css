@@ -274,8 +274,9 @@ header button:hover{
         font-size: 28px;
         line-height: 50px
     }
-    .footer{bottom: -6%}
-
+    .footer{bottom: -6%;padding: 0;}
+    .btnLog a{font-size: 10px}
+    .logo{width: 50%}
 
 }
 
