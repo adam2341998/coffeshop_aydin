@@ -268,8 +268,8 @@ header button:hover{
 
 
 @media(max-width:499px){
-    .navAfter{padding: 0;width:100%;top:39% }
-    header{padding: 0;width: 100%;top:64%}
+    .navAfter{padding: 0;width:100%;top:30% }
+    header{padding: 0;width: 100%;top:55%}
     header span ,header h2{
         font-size: 28px;
         line-height: 50px
