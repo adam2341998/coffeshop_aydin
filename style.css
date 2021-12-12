@@ -268,18 +268,31 @@ header button:hover{
 
 
 @media(max-width:499px){
-    .navAfter{padding: 0;width:100%;top:30% }
+     .navAfter{padding: 0;width:100%;top:30% }
     header{padding: 0;width: 100%;top:55%}
     header span ,header h2{
         font-size: 28px;
         line-height: 50px
     }
-    .footer{bottom: -6%;padding: 0;}
+    .footer,.branchfooter{bottom: -6%;padding: 0;}
+    .branchfooter{bottom: -200%;padding: 0;}
     .btnLog a{font-size: 10px}
     .logo{width: 50%}
+    .branch img{ width: 100px;}
+    .branch{top: 67% ; padding: 0  30px;}
+    .branchartc{top: 183%}
+    .branchMain{height: 290vh}
+    .branchp{padding: 10px;}
+    .branch p{
+        font-size: 15px;
+       line-height: 19px;
+    }
+    .branch h2{
+        font-size: 18px;
+        letter-spacing: 1px;
 
+    }
 }
-
 
 
 
