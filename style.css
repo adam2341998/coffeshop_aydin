@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+html{scroll-behavior: smooth;}
 body{
     /* height: 100vh; */
     background-color: black;
@@ -20,6 +21,19 @@ body{
     height: 100vh;
    
 }
+.menubody{
+    /* position: relative; */
+    color: black;
+    background-image: url(img/1.png);
+    /* background-color: white; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    /* background-size:cover; */
+  
+}
 .branchMain{
     background-image: url(img/branch.jpg);
     height: 220vh;}
@@ -30,6 +44,87 @@ body{
     align-items:center;
     justify-content: space-between;
 }
+.menuContainer{
+    padding-top: 10%;
+    color: white;
+
+    display: flex;
+    align-self: center;
+    justify-content:flex-start ;
+
+}
+.sideBar{
+    width: 25%;
+    border-right: 1px solid rgba(255, 254, 254, 0.2) ;
+    margin-right: 5%;
+  
+
+}
+.sideBar a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 0% 10% 10% 10% ;
+    font-size: 25px;
+    font-weight: 600;
+}
+.fixe{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom:0;
+}
+
+/* .{width: 50%;} */
+.menu {
+   width: 75%;
+  
+}
+
+.menu table{
+    /* margin-bottom: 150px; */
+    width: 100%;
+}
+hr{
+    margin: 75px 0;
+    border-top: 1px solid rgb(255, 255, 255,0.2) ;
+    border-bottom:0 ;
+    width: 93%;
+}
+.menu th,td{
+    font-size: 20px;
+    text-align: center;
+    width: 2%;
+    padding: 30px 0px ;
+   
+}
+.menu th:first-child{
+    /* padding-right: 15%; */
+    text-align: left;
+}
+.menu caption{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logo{
     font-size: 2em;
     color: white;
@@ -80,7 +175,7 @@ header,.branch{
     color: white;
     letter-spacing: 3px;
     line-height: 25px;
-    text-transform: uppercase;
+    
     margin-bottom: 20px;
 }
 .branchp{
@@ -119,6 +214,8 @@ header,.branch{
     width: 80%;
     text-align: center;
 }
+
+
 header h2{
     font-family: 'Meow Script', cursive, 'Raleway', sans-serif;
     font-size: 60px;
@@ -169,27 +266,27 @@ header button:hover{
 }
 
 .btnLog{
-    margin-left: 25px;
+    margin-left: 5px;
     display: inline;
     text-transform: lowercase;
 }
 .btnLog a:first-child{
     border: 1px solid white;
     color: white;
-    padding:  12px 18px;
+    padding:  12px 14px;
 }
 .btnLog a:last-child{
     background-color: black;
-    padding:  12px 18px;
+    padding:  12px 14px;
 }
 .btnLog a:first-child:hover{
     background-color: white;
     color: black;
-    padding:  12px 18px;
+    /* padding:  12px 18px; */
 }
 .btnLog a:last-child:hover{
     background-color: white;
-    padding:  12px 18px;
+    /* padding:  12px 18px; */
 }
 
 .footer{
@@ -221,14 +318,22 @@ header button:hover{
     display: inline-block;
 }
 
+.menufooter{bottom: -517%;}
+
 
 @media(max-width:1100px){
+    .menuContainer{padding-top: 20%;}
     .nav a{display: none;}
     .navAfter{
         display: inline;
     }
 }
 @media(max-width:700px){
+    .menuContainer{padding-top: 30%;}
+    .menu caption,.sideBar a{font-size: 20px;}
+
+
+
     header p{display: none;}
     .containers{
         padding: 20px 20px ;
@@ -267,8 +372,16 @@ header button:hover{
 }
 
 
-@media(max-width:499px){
-     .navAfter{padding: 0;width:100%;top:30% }
+@media(max-width:501px){
+    .menuContainer{padding-top: 50%;}
+    .sideBar{display: none;}
+    .menu th,td{font-size: 15px;}
+    .menu{margin: auto;}
+
+
+
+
+    .navAfter{padding: 0;width:100%;top:30% }
     header{padding: 0;width: 100%;top:55%}
     header span ,header h2{
         font-size: 28px;
@@ -293,6 +406,9 @@ header button:hover{
 
     }
 }
+
+
+
 
 
 
