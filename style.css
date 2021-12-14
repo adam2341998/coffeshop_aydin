@@ -387,8 +387,8 @@ header button:hover{
         font-size: 28px;
         line-height: 50px
     }
-    .footer,.branchfooter{bottom: -6%;padding: 0;}
-    .branchfooter{bottom: -200%;padding: 0;}
+    .footer{bottom: -4%;padding: 0;}
+    .branchfooter{bottom: -194%;padding: 0;}
     .btnLog a{font-size: 10px}
     .logo{width: 50%}
     .branch img{ width: 100px;}
@@ -404,6 +404,11 @@ header button:hover{
         font-size: 18px;
         letter-spacing: 1px;
 
+    }
+    .modal{
+        min-width: 277px;
+        height: 44px;
+        padding: 2rem;
     }
 }
 
@@ -478,10 +483,18 @@ header button:hover{
     width: 100vw;
   }
   .panel:nth-last-of-type(1),
-  .panel:nth-last-of-type(2) {
+  .panel:nth-last-of-type(2),
+  .panel:nth-last-of-type(3) {
     display: none;
   }
 }
+
+
+
+
+
+
+
 /* log in windows */
 
 .hidden {
@@ -490,24 +503,28 @@ header button:hover{
 
 .close-modal {
     position: absolute;
-    top: 1.2rem;
-    right: 2rem;
+    top: -23px;
+    right: -176px;
     font-size: 5rem;
-    color: #333;
+    color: white;
     cursor: pointer;
     border: none;
     background: none;
+    width: auto;
   }
 .modal {
+    background-image: url(img/photo-1620360289100-030b032e5a27.jfif);
+    background-position: center;
+    background-size:cover;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  min-width: 400px;
   height: 70%;
-
   background-color: white;
-  padding: 6rem;
+  padding: 4rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -523,3 +540,61 @@ header button:hover{
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+.modal input,.modal button{
+    min-width: 100%;
+    /* margin-top: 10px; */
+    height: 3rem;
+}
+.modal input{
+    padding:0 20px;
+    
+}
+.modal input,.logInBtn{
+    background-color: rgb(71, 71, 71 ,0.5);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    
+}.logInBtn{
+    margin-top: 10px;
+    background-color: rgb(136, 7, 7,0.5);
+}
+
+.content{
+   /* position:absolute; */
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   /* bottom: 0; */
+
+
+} 
+
+
+
+@media(max-width:501px){
+.modal{
+    min-width: 277px;
+    height: 400px;
+    padding: 3rem 2rem;}
+
+/* .modal input,.modal button{
+    min-width: 78%;} */
+    .close-modal {
+        top: -9px;
+        right: -117px;
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
