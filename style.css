@@ -530,7 +530,7 @@ header button:hover{
     background-size: cover;
 }
 
-input,
+.tlog input, .tlog
 button {
     display: inline-block;
     width: 100%;
