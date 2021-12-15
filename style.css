@@ -770,7 +770,7 @@ button[type=submit]:hover {
     }
     .modal{
         min-width: 277px;
-        height: 44px;
+        height: 400px;
         padding: 2rem;
     }
 }
