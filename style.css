@@ -506,11 +506,11 @@ header button:hover{
 
 /* sign up form */
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
 ::placeholder {
   color: #ddd;
-}
+} */
 
 /* * {
   margin: 0;
