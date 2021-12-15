@@ -326,6 +326,360 @@ header button:hover{
 .menufooter{bottom: -517%;}
 
 
+
+
+
+
+
+
+
+
+/* about  ************************************************************** */
+
+@import url("https://fonts.googleapis.com/css?fmily=Muli&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.bodyPic {
+  background-image: url(picture/17031141.jpg);
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  overflow: hidden;
+  padding-top: 100px;
+}
+.containerAbout {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+    /* background-size: auto 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+    opacity: 1;
+  transition: opacity 0.4s ease-in 0.5s;
+}
+@media (max-width: 500px) {
+    .container {
+    width: 100vw;
+}
+  .panel:nth-last-of-type(1),
+  .panel:nth-last-of-type(2),
+  .panel:nth-last-of-type(3) {
+      display: none;
+  }
+}
+
+
+
+
+
+
+
+/* log in windows */
+
+.hidden {
+  display: none;
+}
+
+.close-modal {
+    position: absolute;
+    top: -23px;
+    right: -176px;
+    font-size: 5rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: auto;
+}
+.modal {
+    background-image: url(img/photo-1620360289100-030b032e5a27.jfif);
+    background-position: center;
+    background-size:cover;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    height: 70%;
+    /* background-color: black; */
+    padding: 4rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+.modal input,.modal button{
+    min-width: 100%;
+    /* margin-top: 10px; */
+    height: 3rem;
+}
+.modal input{
+    padding:0 20px;
+    
+}
+.modal input,.logInBtn{
+    background-color: rgb(71, 71, 71 ,0.5);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    
+}.logInBtn{
+    margin-top: 10px;
+    background-color: rgb(136, 7, 7,0.5);
+    transition: 0.4s;
+  
+}
+.logInBtn:hover{ background-color: rgb(136, 7, 7);}
+.content a{width: 100%;}
+
+.content{
+   /* position:absolute; */
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   /* bottom: 0; */
+   
+   
+} 
+
+
+
+@media(max-width:501px){
+    .modal{
+        min-width: 277px;
+        height: 400px;
+        padding: 3rem 2rem;}
+        
+/* .modal input,.modal button{
+    min-width: 78%;} */
+    .close-modal {
+        top: -9px;
+        right: -117px;
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+/* sign up form */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
+::placeholder {
+  color: #ddd;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ddd;
+  font-family: "Montserrat", sans-serif;
+} */
+
+
+
+.signbody{
+    background: url("img/coffee-wallpaper-160.jpg"), #023262; 
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input,
+button {
+    display: inline-block;
+    width: 100%;
+    height: 3.23rem;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.tlog{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    text-align: center;
+    padding:30px;
+}
+/* .tlog div:first-child{
+    display: flex; */
+    
+    /* .tlogdiv{width: 70%;} */
+    
+    .login {
+        margin-top: 79px;
+   
+    min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.login .containerlogin {
+  position: relative;
+  width: 90%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .title {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.login .social-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login .social-login button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+  color: white;
+}
+.login .social-login button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.login .social-login button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  padding-left: 2px;
+  text-align: center;
+  margin-right: 0.25rem;
+}
+.login .social-login button i.fa-facebook-f {
+  color: #000000;
+}
+.login .social-login button i.fa-google {
+    color: #000000;
+}
+.login .separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .separator span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin: 1.5rem;
+}
+.separator{color: white;}
+form {
+    width: 100%;
+}
+form .form-group {
+    margin-bottom: 1.5rem;
+}
+form .form-group label {
+  display: block;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  color: dark-blue;
+}
+form .form-group input {
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  padding: 0 1.5rem;
+}
+
+button[type=submit] {
+  background: #9e290c;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.3s linear;
+}
+button[type=submit]:hover {
+  background: #ff1e00;
+  
+}
+
+.additional-act {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.7px;
+    margin: 0.5rem 0;
+    color:white;
+}
+.additional-act span {
+  color:white;
+  cursor: pointer;
+}
+
 @media(max-width:1100px){
     .menuContainer{padding-top: 20%;}
     .nav a{display: none;}
@@ -336,6 +690,8 @@ header button:hover{
 @media(max-width:700px){
     .menuContainer{padding-top: 30%;}
     .menu caption,.sideBar a{font-size: 20px;}
+    .tlog {justify-content: center;}
+    .login {padding-right: 0;}
 
 
 
@@ -388,7 +744,7 @@ header button:hover{
 
 
 
-    .navAfter{padding: 0;width:100%;top:30% }
+    .navAfter{padding: 0;width:100%;top:25% }
     header{padding: 0;width: 100%;top:55%}
     header span ,header h2{
         font-size: 28px;
@@ -418,192 +774,6 @@ header button:hover{
         padding: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* about  ************************************************************** */
-
-@import url("https://fonts.googleapis.com/css?fmily=Muli&display=swap");
-* {
-  box-sizing: border-box;
-}
-
-.bodyPic {
-  background-image: url(picture/17031141.jpg);
-  font-family: "Muli", sans-serif;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  overflow: hidden;
-  padding-top: 100px;
-}
-.containerAbout {
-  display: flex;
-  width: 90vw;
-}
-.panel {
-  /* background-size: auto 100%; */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh;
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
-  position: relative;
-  transition: flex 0.7s ease-in;
-}
-.panel h3 {
-  font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
-
-.panel.active {
-  flex: 5;
-}
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.4s ease-in 0.5s;
-}
-@media (max-width: 500px) {
-  .container {
-    width: 100vw;
-  }
-  .panel:nth-last-of-type(1),
-  .panel:nth-last-of-type(2),
-  .panel:nth-last-of-type(3) {
-    display: none;
-  }
-}
-
-
-
-
-
-
-
-/* log in windows */
-
-.hidden {
-  display: none;
-}
-
-.close-modal {
-    position: absolute;
-    top: -23px;
-    right: -176px;
-    font-size: 5rem;
-    color: white;
-    cursor: pointer;
-    border: none;
-    background: none;
-    width: auto;
-  }
-.modal {
-    background-image: url(img/photo-1620360289100-030b032e5a27.jfif);
-    background-position: center;
-    background-size:cover;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 400px;
-  height: 70%;
-  /* background-color: black; */
-  padding: 4rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
-.modal input,.modal button{
-    min-width: 100%;
-    /* margin-top: 10px; */
-    height: 3rem;
-}
-.modal input{
-    padding:0 20px;
-    
-}
-.modal input,.logInBtn{
-    background-color: rgb(71, 71, 71 ,0.5);
-    border: none;
-    outline: none;
-    color: white;
-    border-radius: 10px;
-    
-}.logInBtn{
-    margin-top: 10px;
-    background-color: rgb(136, 7, 7,0.5);
-    transition: 0.4s;
-  
-}
-.logInBtn:hover{ background-color: rgb(136, 7, 7);}
-.content a{width: 100%;}
-
-.content{
-   /* position:absolute; */
-   display: flex;
-   flex-direction:column;
-   align-items: center;
-   /* bottom: 0; */
-
-
-} 
-
-
-
-@media(max-width:501px){
-.modal{
-    min-width: 277px;
-    height: 400px;
-    padding: 3rem 2rem;}
-
-/* .modal input,.modal button{
-    min-width: 78%;} */
-    .close-modal {
-        top: -9px;
-        right: -117px;
-        font-size: 3rem;
-    }
-}
-
-
-
-
-
-
 
 
 
