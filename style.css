@@ -341,13 +341,12 @@ header button:hover{
 
 /* about  ************************************************************** */
 
-@import url("https://fonts.googleapis.com/css?fmily=Muli&display=swap");
+/* @import url("https://fonts.googleapis.com/css?fmily=Muli&display=swap");
 * {
   box-sizing: border-box;
-}
+} */
 
 .bodyPic {
-  background-image: url(picture/17031141.jpg);
   font-family: "Muli", sans-serif;
   margin: 0;
   display: flex;
@@ -356,6 +355,12 @@ header button:hover{
   height: 90vh;
   overflow: hidden;
   padding-top: 100px;
+}
+.aboutpage{
+    background-image: url(img/b4.jpg);
+    background-position: center;
+    background-size: cover;
+    
 }
 .containerAbout {
   display: flex;
@@ -691,6 +696,99 @@ button[type=submit]:hover {
   cursor: pointer;
 }
 
+
+
+
+
+
+/* grgdeg */
+.aboutpage{
+   
+
+}
+.contact{
+    /* background-image: url(img/thumb2-coffee-beans-background-with-coffee-falling-coffee-grains-coffee-concepts-coffee-background.jpg);
+    background-position: center;
+    background-size: cover; */
+    /* background-color: #252f31; */
+    color: #fff;
+    overflow: hidden;
+    padding:50px 40px 80px 40px;
+}
+.contact h2{color: #fff;}
+.contact p{
+    color: #6a6e71;
+    background-color: #252f31;
+    font-size: small;
+    line-height: 20px;
+    margin: 10px 0;
+    width: 70%;
+}
+.contact .info{
+    float: left;
+    width: 50%;
+}
+.form{
+    float: left;
+    width: 50%;
+    padding: 0 0 0 50px ;
+}
+.info strong{color: #d1d6da;}
+.contact .info p:last-of-type{width: 60%;}
+.contact .form label{
+    display: block;
+    color: #d1d6da;
+    margin: 0px 0 10px;
+    font-size: small;
+}
+.form input,textarea {
+    background-color: #4b5557;
+    color: #fff;
+    padding:10px;
+    border: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.form textarea{margin-bottom:0px;}
+.form [type="submit"]{
+    background-color: #191e22;
+    color: #d1d6da;
+    font-size: 15px;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 25px;
+    font-weight: bolder;
+    width: auto;
+}
+/* .fl-left{float: left;} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1100px){
     .menuContainer{padding-top: 20%;}
     .nav a{display: none;}
@@ -798,7 +896,44 @@ button[type=submit]:hover {
         height: 400px;
         padding: 2rem;
     }
+
+
+.contact{
+    margin: auto;
 }
+   
+.form {
+       
+        float: none;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        
+}
+.contact .info{
+       
+        float: none;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+}
+.contact p{
+    width: 100%;
+}
+.bodyPic {
+    height: 96vh;
+    margin-top: 0px;
+    padding-top: 160px;
+}
+    }
+
+
+
+
+
+
+
+
 
 
 
