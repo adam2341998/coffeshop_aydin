@@ -440,11 +440,11 @@ header button:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 350px;
-    height: 85%;
+    min-width: 398px;
+    height: 70%;
     /* background-color: black; */
     padding: 2.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
@@ -493,8 +493,15 @@ header button:hover{
    
    
 } 
-
-
+.newAccount{
+    text-decoration: none;
+    color: rgb(255, 255, 255,.5);
+    margin: 15px;
+}
+.newAccount:hover{
+    /* text-decoration: underline; */
+    color: white;
+}
 
 @media(max-width:501px){
     .modal{
