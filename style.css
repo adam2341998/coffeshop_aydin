@@ -38,9 +38,12 @@ body{
     /* background-size:cover; */
   
 }
+
+.preload{
+height: 220vh;}
 .branchMain{
     background-image: url(img/branch.jpg);
-    height: 220vh;}
+    height: 100%;}
 .containers{
     max-width: 100%;
     padding: 2% 5%;
@@ -160,7 +163,7 @@ body{
 }
 header,.branch{
     position:absolute;
-    top:45%;
+    top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     color: white;
@@ -578,7 +581,7 @@ button {
     /* .tlogdiv{width: 70%;} */
     
     .login {
-        margin-top: -75px;
+        margin-top: -30px;
    
     min-height: 100vh;
   width: 100%;
@@ -784,12 +787,80 @@ button[type=submit]:hover {
 
 
 
+/* sub body */
+.subbody{
+    /* height: 800px; */
+    background-image: url(../img/3.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
 
 
+.pricingCard{
+    margin-top: 17vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-direction:column; */
+    /* align-items: center; */
+    
+}
+.card{
+    margin: 30px;
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background-color: #FFF;
+    box-shadow: 0 10px 20px rgb(0,0,0,0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    overflow: hidden;
+    font-family: 'poppins',sans-serif;
+}
+.details ul{
+    width: 200px;
+    height: 180px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
+}
 
+.details ul li{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
 
-
+.details i{
+    display: block;
+    width: 30px;
+}
+.fa-check{color:#47d147;}
+.fa-times{color:#ff3333;}
+.card p{font-size: 14px;}
+.card span{
+    font-size: 45px;
+    font-weight: 600;
+    color: #503e9d;
+}
+.card button{
+    width: 260px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    background: rgb(80, 62, 157);
+    color: #fff;
+    box-shadow: 0 9px 14px rgb(0,0,0,0.3);
+    cursor: pointer;
+}
 
 
 
@@ -813,7 +884,7 @@ button[type=submit]:hover {
         background-size: cover;
         background-position: center;
     }
-    .bodyPic{ margin-top: 15px;}
+    .bodyPic{ margin-top: 30px;}
 
 }
 @media(max-width:700px){
