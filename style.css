@@ -33,17 +33,23 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     
     /* background-size:cover; */
-  
+    
 }
 
 .preload{
-height: 220vh;}
-.branchMain{
     background-image: url(img/branch.jpg);
-    height: 100%;}
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2000px;
+
+}
+.branchMain{
+    /* height: 100%; */
+}
 .containers{
     max-width: 100%;
     padding: 2% 5%;
@@ -172,7 +178,8 @@ header,.branch{
     text-align: center;
 }
 .branch{
-    top: 35%;
+    top: 300px;
+    margin-top: 80px;
 }
 .branch h2{font-size: 30px;
     font-weight: 500;
@@ -196,7 +203,7 @@ header,.branch{
     padding: 25px;
 }
 .branchartc{
-    top: 130%;
+    top: 1200px;
    
 }
 .branchartc article{
@@ -394,7 +401,7 @@ header button:hover{
 }
 
 .panel.active {
-  flex: 5;
+  flex: 3;
 }
 .panel.active h3 {
     opacity: 1;
@@ -724,7 +731,7 @@ button[type=submit]:hover {
     /* background-color: #252f31; */
     color: #fff;
     overflow: hidden;
-    padding:50px 40px 80px 40px;
+    padding:50px 90px 80px ;
 }
 .contact h2{color: #fff;}
 .contact p{
@@ -790,7 +797,7 @@ button[type=submit]:hover {
 /* sub body */
 .subbody{
     /* height: 800px; */
-    background-image: url(../img/3.jpg);
+    background-image: url(img/3.jpg);
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -910,20 +917,21 @@ button[type=submit]:hover {
     }
     header{top: 51%;}
     .branch{
-        top: 50%;
+        top: 400px;
     }
     .branchartc{
-        top: 143%;
+        top: 1300px;
     }
-    .branchMain{
+    /* .branchMain{
         height: 260vh;
-    }
+    } */
     .branchfooter{bottom: -160%;}
+    
 
-
+    .preload{height: 220vh;}
 }
 
-@media(max-width:645px){
+/* @media(max-width:645px){
     .branchartc{
         top: 150%;
     }
@@ -931,7 +939,7 @@ button[type=submit]:hover {
         width: 100%;
     }
 
-}
+} */
 
 
 @media(max-width:501px){
@@ -959,20 +967,20 @@ button[type=submit]:hover {
         line-height: 50px
     }
     .footer{bottom: -4%;padding: 0;}
-    .branchfooter{bottom: -194%;padding: 0;}
+    .branchfooter{bottom: -124%;padding: 0;}
     .btnLog a{font-size: 10px}
     .logo{width: 50%}
     .branch img{ width: 100px;}
-    .branch{top: 67% ; padding: 0  30px;}
-    .branchartc{top: 183%}
-    .branchMain{height: 290vh}
+    .branch{margin-top: 80px ; padding: 0  30px;}
+    .branchartc{top: 1100px}
+    .branchMain{height: 220vh}
     .branchp{padding: 10px;}
     .branch p{
         font-size: 15px;
        line-height: 19px;
     }
     .branch h2{
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: 1px;
 
     }
