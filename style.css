@@ -28,7 +28,7 @@ body{
 .menubody{
     /* position: relative; */
     color: black;
-    background-image: url(img/1.png);
+    background-image: url(img/11.png);
     /* background-color: white; */
     background-position: center;
     background-repeat: no-repeat;
@@ -122,6 +122,7 @@ body{
     text-align: left;
 }
 .menu caption{
+    color: rgba(221, 122, 64, 0.8);
     font-size: 25px;
     font-weight: 600;
     text-align: left;
@@ -255,13 +256,14 @@ header span{
     display: block;
 }
 header p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: white;
     letter-spacing: 3px;
     line-height: 25px;
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-top: 10px
 }
 
 header button{
@@ -737,8 +739,8 @@ button[type=submit]:hover {
 .contact p{
     color: white;
     /* background-color: #252f31; */
-    font-size: small;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 40px;
     margin: 10px 0;
     width: 70%;
 }
@@ -784,7 +786,8 @@ button[type=submit]:hover {
     transition: 0.3s;
 }
 /* .fl-left{float: left;} */
-
+.num1{
+    font-family: 'poppins',sans-serif;}
 
 
 
@@ -928,7 +931,7 @@ button[type=submit]:hover {
     .branchfooter{bottom: -160%;}
     
 
-    .preload{height: 220vh;}
+    .preload{height: 256vh;}
 }
 
 /* @media(max-width:645px){
@@ -993,6 +996,7 @@ button[type=submit]:hover {
 
 .contact{
     margin: auto;
+    padding: 50px 50px 80px;
 }
    
 .form {
