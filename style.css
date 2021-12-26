@@ -44,11 +44,11 @@ body{
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 2000px;
+    /* height: 2000px; */
 
 }
 .branchMain{
-    /* height: 100%; */
+    margin-bottom: 160px;
 }
 .containers{
     max-width: 100%;
@@ -168,7 +168,7 @@ body{
     color: black;
     
 }
-header,.branch{
+header{
     position:absolute;
     top:50%;
     left:50%;
@@ -179,8 +179,11 @@ header,.branch{
     text-align: center;
 }
 .branch{
-    top: 300px;
-    margin-top: 80px;
+   text-align: center;
+   color: white;
+   padding:  0 30px;
+   /* width: 50%; */
+   
 }
 .branch h2{font-size: 30px;
     font-weight: 500;
@@ -195,6 +198,7 @@ header,.branch{
     color: white;
     letter-spacing: 3px;
     line-height: 25px;
+
     
     margin-bottom: 20px;
 }
@@ -202,6 +206,7 @@ header,.branch{
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 25px;
+    margin: 0 20%;
 }
 .branchartc{
     top: 1200px;
@@ -742,7 +747,7 @@ button[type=submit]:hover {
     font-size: 16px;
     line-height: 40px;
     margin: 10px 0;
-    width: 70%;
+    width: 100%;
 }
 .contact .info{
     float: left;
@@ -754,7 +759,7 @@ button[type=submit]:hover {
     padding: 0 0 0 50px ;
 }
 .info strong{color: rgb(255, 255, 255);}
-.contact .info p:last-of-type{width: 70%;}
+.contact .info p:last-of-type{width: 100%;}
 .contact .form label{
     display: block;
     color: white;
@@ -931,7 +936,7 @@ button[type=submit]:hover {
     .branchfooter{bottom: -160%;}
     
 
-    .preload{height: 256vh;}
+    /* .preload{height: 256vh;} */
 }
 
 /* @media(max-width:645px){
@@ -975,8 +980,8 @@ button[type=submit]:hover {
     .logo{width: 50%}
     .branch img{ width: 100px;}
     .branch{margin-top: 80px ; padding: 0  30px;}
-    .branchartc{top: 1100px}
-    .branchMain{height: 220vh}
+    .branchartc{margin-top: 0;}
+    /* .branchMain{height: 220vh} */
     .branchp{padding: 10px;}
     .branch p{
         font-size: 15px;
